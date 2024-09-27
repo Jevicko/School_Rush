@@ -383,6 +383,7 @@
 "Assets/Assets/Script/System/MainMenuScript.cs"
 "Assets/Assets/Script/TaskManager.cs"
 "Assets/Assets/Script/Timer.cs"
+"Assets/Assets/Script/TimerWithDigitalClock.cs"
 "Assets/Assets/Script/UI/FlexibleGridLayout.cs"
 "Assets/Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
