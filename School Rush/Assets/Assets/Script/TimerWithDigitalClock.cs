@@ -8,7 +8,9 @@ public class TimerWithDigitalClock : MonoBehaviour
     public Text digitalClockText; // Referensi ke UI Text untuk menampilkan jam
     public GameObject warningPanel; // Panel yang muncul 30 detik sebelum waktu habis
     public GameObject gameOverPanel; // Panel yang muncul saat waktu habis
-    private float totalTime = 10 * 60f; // Waktu total 10 menit dalam detik
+    public GameObject makanPanel; // Panel Makan
+    public GameObject mandiPanel; // Panel Mandi
+    private float totalTime = 6 * 60f; // Waktu total 5 menit dalam detik
     private float startHour = 5f; // Jam mulai (5:00)
     private float endHour = 7f; // Jam akhir (7:00)
     private bool timerRunning = true;
@@ -34,6 +36,8 @@ public class TimerWithDigitalClock : MonoBehaviour
     {
         warningPanel.SetActive(false); // Awalnya panel warning tidak aktif
         gameOverPanel.SetActive(false); // Panel gameover juga tidak aktif
+        makanPanel.SetActive(false); // Panel makan tidak aktif
+        mandiPanel.SetActive(false); // Panel mandi tidak aktif
         StartCoroutine(StartTimer()); // Mulai timer
 
         // Berlangganan event saat scene baru dimuat
@@ -92,6 +96,7 @@ public class TimerWithDigitalClock : MonoBehaviour
     {
         gameOverPanel.SetActive(true); // Tampilkan panel gameover
         timerRunning = false; // Hentikan timer
+        Time.timeScale = 0;
     }
 
     // Fungsi untuk reset timer saat scene menu dibuka
@@ -102,6 +107,8 @@ public class TimerWithDigitalClock : MonoBehaviour
         warningShown = false;
         warningPanel.SetActive(false);
         gameOverPanel.SetActive(false);
+        makanPanel.SetActive(false); // Reset panel makan
+        mandiPanel.SetActive(false); // Reset panel mandi
         StartCoroutine(StartTimer());
     }
 
@@ -121,23 +128,39 @@ public class TimerWithDigitalClock : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-IEnumerator BlinkWarningPanel()
-{
-    float blinkDuration = 0.5f; // Durasi berkedip (0.5 detik on/off)
-    
-    while (elapsedTime < totalTime)
+    IEnumerator BlinkWarningPanel()
     {
-        // Tampilkan panel
-        warningPanel.SetActive(true);
-        yield return new WaitForSeconds(blinkDuration); // Tunggu durasi blink
+        float blinkDuration = 0.5f; // Durasi berkedip (0.5 detik on/off)
+        
+        while (elapsedTime < totalTime)
+        {
+            // Tampilkan panel
+            warningPanel.SetActive(true);
+            yield return new WaitForSeconds(blinkDuration); // Tunggu durasi blink
 
-        // Sembunyikan panel
-        warningPanel.SetActive(false);
-        yield return new WaitForSeconds(blinkDuration); // Tunggu durasi blink
+            // Sembunyikan panel
+            warningPanel.SetActive(false);
+            yield return new WaitForSeconds(blinkDuration); // Tunggu durasi blink
+        }
+
+        // Jika waktu habis, panel akan tetap menyala
+        warningPanel.SetActive(true);
     }
 
-    // Jika waktu habis, panel akan tetap menyala
-    warningPanel.SetActive(true);
+    // Fungsi untuk mengurangi waktu ketika panel makan diakses
+    public void AccessMakanPanel()
+    {
+        makanPanel.SetActive(true); // Tampilkan panel makan
+        totalTime -= 120f; // Kurangi waktu 2 menit (120 detik)
+        if (totalTime < 0f) totalTime = 0f; // Pastikan totalTime tidak negatif
+    }
+
+    // Fungsi untuk mengurangi waktu ketika panel mandi diakses
+    public void AccessMandiPanel()
+    {
+        mandiPanel.SetActive(true); // Tampilkan panel mandi
+        totalTime -= 120f; // Kurangi waktu 2 menit (120 detik)
+        if (totalTime < 0f) totalTime = 0f; // Pastikan totalTime tidak negatif
+    }
 }
 
-}
