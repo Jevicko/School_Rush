@@ -6,27 +6,33 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
-      flags: 0
-    RecentlyUsedSceneGuid-1:
-      value: 50060c5350040a02090c0e7548745d44104e1c2e7e2d7664282a4c67b7b4316d
-      flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 0003045001055b5e5a590a2013700e444e164a7c7578706228284d36bab06261
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 00550c00500c0808085d0e75447408444f4f4873792b22352c2b4a6be3e1306f
-      flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 550251545c530d0d0b085b7b41225c4440151d7279297f322e714d63e3b66360
-      flags: 0
-    RecentlyUsedSceneGuid-5:
       value: 0104015007515b59085b547713740f4442151c287f7c71317d704564b3b66661
       flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 5b0306530453505f5b590e7048765e44424f4f7f2e7b72312c7e1960b6e36260
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 5406565050035b5d5d5b082445725d4415151a2f7e7120312e2b4e66e6b56239
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 53535703500c590c0959557511775c144e15487c7a7822337c78446bb4b73160
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 50060c5350040a02090c0e7548745d44104e1c2e7e2d7664282a4c67b7b4316d
+      flags: 0
     RecentlyUsedSceneGuid-6:
-      value: 5505005f07005a5e0f5c5a75487a084414164d287d7d256029711b60b6e1623b
+      value: 0003045001055b5e5a590a2013700e444e164a7c7578706228284d36bab06261
       flags: 0
     RecentlyUsedSceneGuid-7:
+      value: 5152550351005e095f5b547015740744464f1e782d2c70672c7f186ab7b16361
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 5505005f07005a5e0f5c5a75487a084414164d287d7d256029711b60b6e1623b
+      flags: 0
+    RecentlyUsedSceneGuid-9:
       value: 5454020256535d5e580a547b46720a4417154c7e7f707e64787c4e61e3e3673d
       flags: 0
     vcSharedLogLevel:
