@@ -384,6 +384,7 @@
 "Assets/Assets/Script/LaluLintas/VehicleTarget.cs"
 "Assets/Assets/Script/Npc.cs"
 "Assets/Assets/Script/NPCMultiTargetMovement.cs"
+"Assets/Assets/Script/ParallaxEffect.cs"
 "Assets/Assets/Script/PatrolPoint.cs"
 "Assets/Assets/Script/PauseMenu.cs"
 "Assets/Assets/Script/PlayerController.cs"

@@ -10,7 +10,7 @@ public class TimerWithDigitalClock : MonoBehaviour
     public GameObject gameOverPanel; // Panel yang muncul saat waktu habis
     public GameObject makanPanel; // Panel Makan
     public GameObject mandiPanel; // Panel Mandi
-    private float totalTime = 6 * 60f; // Waktu total 5 menit dalam detik
+    private float totalTime = 5 * 60f; // Waktu total 5 menit dalam detik
     private float startHour = 5f; // Jam mulai (5:00)
     private float endHour = 7f; // Jam akhir (7:00)
     private bool timerRunning = true;
