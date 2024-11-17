@@ -379,6 +379,7 @@
 "Assets/Assets/Script/DialogSystem.cs"
 "Assets/Assets/Script/DoorControl.cs"
 "Assets/Assets/Script/EnterCar.cs"
+"Assets/Assets/Script/GameFinish.cs"
 "Assets/Assets/Script/GameFinishManager.cs"
 "Assets/Assets/Script/HUD/PausedManager.cs"
 "Assets/Assets/Script/LaluLintas/VehicleTarget.cs"
