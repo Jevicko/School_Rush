@@ -374,6 +374,7 @@
 "Assets/Assets/Script/AutoFly.cs"
 "Assets/Assets/Script/CameraSwitchCinemachine.cs"
 "Assets/Assets/Script/CarController.cs"
+"Assets/Assets/Script/CharacterTransition.cs"
 "Assets/Assets/Script/checkpointFinish.cs"
 "Assets/Assets/Script/CheckpointManager.cs"
 "Assets/Assets/Script/DialogSystem.cs"

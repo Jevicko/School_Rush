@@ -109,6 +109,7 @@
     <Compile Include="Assets\Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\TaichiCharacterPack\TwinViewer\Scripts\Twin2ndSceneScript.cs" />
+    <Compile Include="Assets\Assets\Script\CharacterTransition.cs" />
     <Compile Include="Assets\Assets\Script\HUD\PausedManager.cs" />
     <Compile Include="Assets\Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />

@@ -205,7 +205,7 @@ public class CheckpointManager : MonoBehaviour
     private IEnumerator ShowPanelForTimeMandi(float panelTime)
     {
         scenemandi.SetActive(true); 
-        Time.timeScale = 0; // Pause game
+        Time.timeScale = 1; // Pause game
         yield return new WaitForSecondsRealtime(panelTime); // Menunggu 10 detik sebelum menyembunyikan panel
         scenemandi.SetActive(false); 
         Time.timeScale = 1; // Resume game
@@ -217,7 +217,7 @@ public class CheckpointManager : MonoBehaviour
     private IEnumerator ShowPanelForTimeMakan(float panelTime)
     {
         scenemakan.SetActive(true);
-        Time.timeScale = 0; // Pause game
+        Time.timeScale = 1; // Pause game
         yield return new WaitForSecondsRealtime(panelTime); // Menunggu 10 detik sebelum menyembunyikan panel
         scenemakan.SetActive(false); 
         Time.timeScale = 1; // Resume game

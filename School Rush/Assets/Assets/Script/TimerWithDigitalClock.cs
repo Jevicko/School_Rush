@@ -179,7 +179,7 @@ public class TimerWithDigitalClock : MonoBehaviour
     public GameObject mandiPanel;  // Panel untuk aksi mandi
     public float elapsedTime = 0f;  // Waktu yang telah berlalu dalam detik
 
-    public float totalTime = 2 * 60f;  // Total waktu (2 menit)
+    public float totalTime = 6 * 60f;  // Total waktu (2 menit)
     private float startHour = 5f;  // Jam mulai (5:00)
     private float endHour = 7f;  // Jam akhir (7:00)
     private bool timerRunning = true;  // Flag untuk menjalankan timer

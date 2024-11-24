@@ -36818,6 +36818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 555214763}
   continueButton: {fileID: 96685129}
+  mainCamera: {fileID: 1704015173}
   delayTime: 2
 --- !u!4 &852449382
 Transform:
@@ -92059,6 +92060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 555214763}
   continueButton: {fileID: 96685129}
+  mainCamera: {fileID: 1704015173}
   delayTime: 2
 --- !u!4 &2083304010
 Transform:
